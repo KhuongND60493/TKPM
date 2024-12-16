@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VstepPractice.API", "VstepPractice.API\VstepPractice.API.csproj", "{6F06043E-FC0F-4AC7-ACC2-6EA82B0D8115}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33D183DA-7064-449E-953A-2249FB6CD438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F06043E-FC0F-4AC7-ACC2-6EA82B0D8115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F06043E-FC0F-4AC7-ACC2-6EA82B0D8115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F06043E-FC0F-4AC7-ACC2-6EA82B0D8115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F06043E-FC0F-4AC7-ACC2-6EA82B0D8115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {335DCB3B-C9C7-4F02-B7FD-BC8002FB996E}
+	EndGlobalSection
+EndGlobal

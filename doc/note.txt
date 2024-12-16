@@ -1,0 +1,71 @@
+------------------------------------------------------------------------------------------------------------------------
+***** Thành viên:
+1981223     -   Nguyễn Duy Khương
+21810201    -   Nguyễn Thuận An
+22810208    -   Bùi Duy Minh
+20810018    -   Liên Kim Phong
+------------------------------------------------------------------------------------------------------------------------
+***** Need install before run app:
+1. install redis-server
+2. install sequenlize-cli
+3. install postgres (need dbeaver tool for create db)
+4. install npm/yarn/pnpm (any for install node_modules + run app)
+5. dotnet cli (need if use macosx)
+------------------------------------------------------------------------------------------------------------------------
+***** Run app:
+1. Clone source form GitLab with url: git@gitlab.com:nguyenromio/tkpm.git
+
+2. At root project run:
+        yarn install/ pnpm install/ npm install
+
+3. Run redis server
+        Run command line of root project:
+            redis-server
+
+4. Change value .env file
+    REDIS_URL
+    POSTGRESQL_URL
+    ConnectionStrings__PostgresConnection
+    OPENAI__API_KEY
+    AZURE__STORAGEACCOUNT__CONNECTIONSTRING
+    AZURE__STORAGEACCOUNT__CONTAINERNAME
+    AZURE__SPEECH__SUBSCRIPTIONKEY
+    AZURE__SPEECH__REGION
+
+5.(Optional) Run migration and seed data:
+
+       1. Change value connect db back-end/db/config/config.json file
+              "development": {
+                "username": "postgres",
+                "password": "123456",
+                "database": "name_db",
+                "host": "127.0.0.1",
+                "dialect": "postgres"
+              },
+       2. Run command line of root project:
+            yarn msr
+
+6. Run project BE NetCore
+        1. Run project by Visual studio or Rider
+        2. Run command line of root project:
+            yarn net-api
+
+7. Change value .env file
+        NETCORE_HOST
+
+8. Run project BE node
+    Run command line of root project:
+        yarn node-api
+
+9. Run project FE
+    Run command line of root project:
+            yarn web
+------------------------------------------------------------------------------------------------------------------------
+***** FE URL: http://localhost:4002/
+** Account Login
+
+Admin: admin@gmail.com/Demo@123
+Teacher: teacher@gmail.com/Demo@123
+Student: student@gmail.com/Demo@123
+
+
